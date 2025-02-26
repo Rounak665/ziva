@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Chat Page</title>
+</head>
+<body>
+    <h1 th:text="${message}"></h1>
+
+    <!-- Form with submit button to redirect to /Ziva -->
+    <form th:action="@{/Ziva}" method="get">
+        <button type="submit">Go to Home</button>
+    </form>
+</body>
+</html>
