@@ -3,14 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ziva Chatbot</title>
-    <link rel="stylesheet" href="/css/styles.css">
+    <title>ZIVA</title>
+    <link rel="stylesheet" href="../static/css/index.css">
 </head>
 <body>
-    <h1>Hello, This is Ziva!</h1>
-    <p th:text="${message}"></p> <!-- Spring Boot will replace ${message} -->
-    <form th:action="@{/Chat}" method="get">
-        <button type="submit">Start Chat</button>
-    </form>
+    <div class="chat-container">
+<div class="ai-chat-box">
+    <img src="../static/assets/chatbot ziva logo.png" alt="ziva logo" id="aiImage" width="10%">
+    <div class="ai-chat-area">
+   Hello sir! How Can I Help you Today?
+    </div>
+   
+</div>
+    </div>
+    <div class="prompt-area">
+<input type="text" id="prompt" placeholder="Message...">
+<button id="image"><img src="" alt=""> 
+<input type="file" accept="images/*" hidden></button>
+<button id="submit"><img src="" alt=""></button>
+    </div>
+  <script src="../static/js/index.js"></script>  
 </body>
 </html>
