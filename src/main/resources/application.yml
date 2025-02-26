@@ -1,0 +1,24 @@
+spring:
+  application:
+    name: ziva          # Application name
+
+  thymeleaf:
+    prefix: classpath:/templates/       # Location of Thymeleaf templates
+    suffix: .html                       # File extension for templates
+
+  web:
+    resources:
+      static-locations: classpath:/static/  # Location for static resources (CSS, JS, etc.)
+  datasource:
+    url: jdbc:mysql://localhost:3306/ziva  # MySQL database URL
+    username: ROUNAK                              # Database username
+    password: CHAKRABORTY                             # Database password
+    driver-class-name: com.mysql.cj.jdbc.Driver          # MySQL driver class
+  jpa:
+    hibernate:
+      ddl-auto: update                                   # Automatically updates the schema (see details below)
+    show-sql: true                                       # Enables SQL query logging in the console
+
+
+server:
+  port: 8080              # Server port
