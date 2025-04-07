@@ -3,28 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ZIVA-Talk to the Future</title>
+    <title>ZIVA-ask to the future</title>
     <link rel="stylesheet" href="../static/css/index.css">
-    <!-- Favicons -->
-  <link href="../static/assets/ziva for favicon.png" rel="icon">
+    <link rel="icon" href="../static/assets/chatbot_ziva_Logo__1_.png" type="image/png">
 </head>
 <body>
-
+    <header>
+        <div class="my-account">
+            <a href="#" id="account-link">My Account</a>
+            <div class="dropdown">
+                <a href="#">Profile</a>
+                <a href="#">Settings</a>
+                <a href="#">Logout</a>
+            </div>
+        </div>
+    </header>
     
-   
     <div class="chat-container">
         <div class="ai-chat-box">
-            <img src="../static/assets/ziva main logo.png" alt="ziva logo" id="aiImage" width="5%">
+            <img src="../static/assets/logo.final.png" alt="ziva logo" id="aiImage" width="10%">
             <div class="ai-chat-area">
                 Hello sir! How Can I Help you Today?
             </div>
         </div>
     </div>
     <div class="prompt-area">
-        <input type="text" id="prompt" placeholder="Tell me!...">
-        <button id="image"><img src="../static/assets/final icon.png" alt="Image icon">
+        <input type="text" id="prompt" placeholder="Message...">
+        <button id="image"><img src="../static/assets/final icon.png" alt="">
         <input type="file" accept="images/*" hidden></button>
-        <button id="submit"><img src="../static/assets/send icon.png" alt="send button icon"></button>
+        <button id="submit"><img src="../static/assets/send icon.png" alt=""></button>
     </div>
     <script src="../static/js/index.js"></script>
 </body>
